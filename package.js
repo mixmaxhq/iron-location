@@ -1,4 +1,5 @@
 Package.describe({
+  name: 'iron:location',
   summary: 'Reactive urls that work in IE8/9 and modern browsers.',
   version: '1.0.9',
   git: 'https://github.com/eventedmind/iron-location.git'
@@ -6,7 +7,7 @@ Package.describe({
 
 Package.on_use(function (api) {
   api.versionsFrom('METEOR@0.9.2');
-  
+
   api.use('underscore');
   api.use('tracker');
   api.use('jquery');
@@ -17,7 +18,7 @@ Package.on_use(function (api) {
   api.use('iron:url@1.0.9');
 
   api.use('appcache', {weak: true});
-  
+
   api.add_files('lib/utils.js', 'client');
   api.add_files('lib/state.js', 'client');
   api.add_files('lib/location.js', 'client');
